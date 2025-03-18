@@ -58,6 +58,9 @@ if __name__ == "__main__":
     #Streamlit title of the web application
     st.title("ChefBot - Your Culinary Assistant")
 
+    st.markdown("""Welcome, I am ChefBot! 🍳
+                To get started, simply tell me what ingredients 🍳 you have on hand and I'll help you discover some delicious recipe ideas in detail! """, )
+
     # Initialize chat history
     if "chat" not in st.session_state:
         # Configure the Gemini API
