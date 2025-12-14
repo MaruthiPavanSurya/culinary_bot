@@ -71,7 +71,7 @@ if __name__ == "__main__":
             st.error("GEMINI_API_KEY environment variable not set.")
         else:
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-2.0-flash')
+            model = genai.GenerativeModel('gemini-2.5-flash')
             st.session_state.chat = model.start_chat() #Initialize chat and store to session state so that it persists
 
             # Inject the system instruction as the first message
