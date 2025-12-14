@@ -2,7 +2,7 @@ import os
 import google.generativeai as genai
 import streamlit as st
 
-def generate_response(user_prompt, chat, model_name="gemini-2.0-flash", temperature=1, top_p=0.95, top_k=40, max_output_tokens=8192):
+def generate_response(user_prompt, chat, model_name="gemini-2.5-flash", temperature=1, top_p=0.95, top_k=40, max_output_tokens=8192):
     # Get the API key from Streamlit secrets
     api_key = st.secrets["GEMINI_API_KEY"]
 
